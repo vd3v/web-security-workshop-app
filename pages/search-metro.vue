@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 import {Input, Card, Tag} from "agnostic-vue";
 import stations from '../public/stations.json'
 const query = ref(useRoute().query.q || '')
@@ -28,4 +28,10 @@ const stationsList = computed(()=>{
         Nothing found for&nbsp;<b v-html="query"/>
     </Card>
 
-</template>
+</template> -->
+
+<template>
+    <div class="notes-list">
+      <h1>Thank you so much for participation!</h1>
+    </div>
+  </template>

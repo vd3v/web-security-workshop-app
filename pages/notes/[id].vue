@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 import { Header, HeaderNav, Switch, Icon, Button, Input, Loader} from "agnostic-vue"
 import Note from '../../components/general/Note.vue'
 
@@ -23,4 +23,10 @@ onMounted(async () => {
         <Loader v-if="isLoading"/>
         <Note v-else :note="note" />
     </div>
-</template>
+</template> -->
+
+<template>
+    <div class="notes-list">
+      <h1>Thank you so much for participation!</h1>
+    </div>
+  </template>

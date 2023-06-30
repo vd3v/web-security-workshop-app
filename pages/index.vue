@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 import Note from '../components/general/Note.vue'
 
 const { data, pending, error, refresh } = await useAsyncData(
@@ -11,5 +11,12 @@ const notes = ref(data.value.notes)
 <template>
   <div class="notes-list">
     <Note is-border class="mbs10" v-for="note in notes" :note="note"/>
+  </div>
+</template> -->
+
+
+<template>
+  <div class="notes-list">
+    <h1>Thank you so much for participation!</h1>
   </div>
 </template>

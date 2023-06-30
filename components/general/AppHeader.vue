@@ -23,7 +23,7 @@ const formDidSubmit = () => {
 
 </script>
 <template>
-  <Header isHeaderContentEnd class="p12">
+  <!-- <Header isHeaderContentEnd class="p12">
     <template v-slot:logoleft>
       <nuxt-link class="flex-fill" to="/" >(un)safe notes</nuxt-link>
     </template>
@@ -50,6 +50,6 @@ const formDidSubmit = () => {
           Add a note
         </template>
         <AddNoteForm @formDidSubmit="formDidSubmit"/>
-      </Dialog>
+      </Dialog> -->
 
 </template>

@@ -1,19 +1,19 @@
-import {useNotesDatabase} from '../database/useNotesDatabase'
-import {Note} from '../../models/Note'
+import { useNotesDatabase } from '../database/useNotesDatabase'
+import { Note } from '../../models/Note'
 
 
 export default defineEventHandler(async (event) => {
     const body = await readBody(event)
 
     const id = await addNote(Note.parse(body))
-    return {id}
+    return { id }
 })
 
 
 
-async function addNote(note:Note){
+async function addNote(note: Note) {
     const id = await getNewId()
-    await useNotesDatabase().writeValue(`${id}`,({
+    await useNotesDatabase().writeValue(`${id}`, ({
         ...note,
         id
     }))
@@ -21,7 +21,7 @@ async function addNote(note:Note){
     return id
 }
 
-export async function getLastId(){
+export async function getLastId() {
     try {
         const lastId = await useNotesDatabase().readValue('lastId')
         return (Number(lastId) || 0)
